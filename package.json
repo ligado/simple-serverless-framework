@@ -1,0 +1,17 @@
+{
+  "name": "simple-serverless-framework",
+  "version": "1.0.1",
+  "description": "A simple AWS lambda web framework, based on the Express interface",
+  "main": "index.js",
+  "scripts": {
+    "test-all": "jest",
+    "coverage": "jest \"^((?!integration).)*$\" --coverage",
+    "test": "jest \"^((?!integration).)*$\"",
+    "integration-tests": "USERS_TABLE=users-table-dev DYNAMODB_REGION=us-east-1 ACCOUNT_CONFIRMATION_TABLE=account-confirmation-table-dev jest \".*integration.*\""
+  },
+  "author": "Steven Haines",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
