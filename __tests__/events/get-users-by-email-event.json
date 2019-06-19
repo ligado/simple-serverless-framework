@@ -12,13 +12,13 @@
     "CloudFront-Is-SmartTV-Viewer": "false",
     "CloudFront-Is-Tablet-Viewer": "false",
     "CloudFront-Viewer-Country": "US",
-    "Host": "l3egckg968.execute-api.us-east-1.amazonaws.com",
+    "Host": "foo.execute-api.us-east-1.amazonaws.com",
     "Postman-Token": "e94b9cf4-7b32-4fa9-9e36-dc141c0a29d5",
     "User-Agent": "PostmanRuntime/7.13.0",
-    "Via": "1.1 2bbea106472dce7ee89626cbecf8aebf.cloudfront.net (CloudFront)",
-    "X-Amz-Cf-Id": "qaBSlVZ2ONHkFIahHtofUQqvo3Agt-C-eT90-4opj_FgTXR3ynGRdg==",
+    "Via": "1.1 foo.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "foo",
     "X-Amzn-Trace-Id": "Root=1-5d041ecc-244d02339c6ede22af019bd0",
-    "X-Forwarded-For": "72.238.214.109, 64.252.128.79",
+    "X-Forwarded-For": "1.1.1.1",
     "X-Forwarded-Port": "443",
     "X-Forwarded-Proto": "https"
   },
@@ -51,7 +51,7 @@
       "US"
     ],
     "Host": [
-      "l3egckg968.execute-api.us-east-1.amazonaws.com"
+      "foo.execute-api.us-east-1.amazonaws.com"
     ],
     "Postman-Token": [
       "e94b9cf4-7b32-4fa9-9e36-dc141c0a29d5"
@@ -60,16 +60,16 @@
       "PostmanRuntime/7.13.0"
     ],
     "Via": [
-      "1.1 2bbea106472dce7ee89626cbecf8aebf.cloudfront.net (CloudFront)"
+      "1.1 foo.cloudfront.net (CloudFront)"
     ],
     "X-Amz-Cf-Id": [
-      "qaBSlVZ2ONHkFIahHtofUQqvo3Agt-C-eT90-4opj_FgTXR3ynGRdg=="
+      "foo"
     ],
     "X-Amzn-Trace-Id": [
       "Root=1-5d041ecc-244d02339c6ede22af019bd0"
     ],
     "X-Forwarded-For": [
-      "72.238.214.109, 64.252.128.79"
+      "1.1.1.1"
     ],
     "X-Forwarded-Port": [
       "443"
@@ -95,7 +95,7 @@
     "extendedRequestId": "bSm__EtkIAMF41A=",
     "requestTime": "14/Jun/2019:22:25:16 +0000",
     "path": "/dev/users",
-    "accountId": "946194012856",
+    "accountId": "foo",
     "protocol": "HTTP/1.1",
     "stage": "dev",
     "domainPrefix": "l3egckg968",
@@ -106,7 +106,7 @@
       "accountId": null,
       "cognitoIdentityId": null,
       "caller": null,
-      "sourceIp": "72.238.214.109",
+      "sourceIp": "1.1.1.1",
       "principalOrgId": null,
       "accessKey": null,
       "cognitoAuthenticationType": null,
@@ -115,8 +115,8 @@
       "userAgent": "PostmanRuntime/7.13.0",
       "user": null
     },
-    "domainName": "l3egckg968.execute-api.us-east-1.amazonaws.com",
-    "apiId": "l3egckg968"
+    "domainName": "foo.execute-api.us-east-1.amazonaws.com",
+    "apiId": "foo"
   },
   "body": null,
   "isBase64Encoded": false
