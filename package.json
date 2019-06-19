@@ -7,7 +7,7 @@
     "test-all": "jest",
     "coverage": "jest \"^((?!integration).)*$\" --coverage",
     "test": "jest \"^((?!integration).)*$\"",
-    "integration-tests": "USERS_TABLE=users-table-dev DYNAMODB_REGION=us-east-1 ACCOUNT_CONFIRMATION_TABLE=account-confirmation-table-dev jest \".*integration.*\""
+    "integration-tests": "jest \".*integration.*\""
   },
   "author": "Steven Haines",
   "license": "ISC",
