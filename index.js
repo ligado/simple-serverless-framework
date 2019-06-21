@@ -57,18 +57,15 @@ function createSimpleServlerlessFramework() {
             // Found a handler
             const handler = matchingHandlers[0].handler
             try {
-                // Execute middlewares
-                const middlewareResult = await app.middlewares.execute(req, res)
-                if (!middlewareResult) {
-                    // One of the middlewares aborted the request processing
-                    return res
-                }
-
                 // Execute BEFORE advice
                 await app.adviceObject.executeBeforeAdvice(req.resource, req, res)
 
-                // Execute the handler
-                await handler.apply(null, [req, res])
+                // Execute middlewares
+                const middlewareResult = await app.middlewares.execute(req, res)
+                if (middlewareResult) {
+                    // Middleware succeeded, execute the request
+                    await handler.apply(null, [req, res])
+                }
 
                 // // Execute AFTER advice
                 await app.adviceObject.executeAfterAdvice(req.resource, req, res)

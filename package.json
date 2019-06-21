@@ -1,6 +1,6 @@
 {
   "name": "simple-serverless-framework",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A simple AWS lambda web framework, based on the Express interface",
   "main": "index.js",
   "scripts": {

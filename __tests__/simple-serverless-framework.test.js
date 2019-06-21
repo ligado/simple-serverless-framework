@@ -299,8 +299,10 @@ test('App Execution with middleware failure and around advice', async () => {
     expect(result.statusCode).toBe(500)
     expect(Object.keys(result.headers).length).toBe(0)
     expect(JSON.parse(result.body).error).toBe('Something bad happened')
-    expect(beforeAdviceCalled).toBe(false)
-    expect(afterAdviceCalled).toBe(false)
+
+    // Updated the advice code so that the advice runs before and after the middleware, success or failure
+    expect(beforeAdviceCalled).toBe(true)
+    expect(afterAdviceCalled).toBe(true)
 })
 
 test('App Execution with invalid path', async () => {
